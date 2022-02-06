@@ -2,10 +2,10 @@ server:
   port: 9296
 
 spring:
-  profiles:
-    active: dev
   application:
     name: CONFIG-SERVER
+  profiles:
+    active: dev
   cloud:
     config:
       server:
