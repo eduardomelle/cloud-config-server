@@ -13,6 +13,12 @@ spring:
           uri: https://github.com/eduardomelle/config-server
           clone-on-start: true
           default-label: main
+      fail-fast: true
+      retry:
+        initial-interval: 1500
+        multiplier: 1.5
+        max-attempts: 10000
+        max-interval: 2000
 
 eureka:
   client:
